@@ -16,8 +16,8 @@ void sauvegarder_score(char *nom, int Point) {
     fprintf(f, "%s;%d;%04d-%02d-%02d;%02d:%02d\n",
             nom,
             Point,
-            tm->tm_year + 1900,
-            tm->tm_mon + 1,
+            tm->tm_year + 1900, ///time_t est un type qui represente le temps en secondes écoulées avec time(NULL)qui permet de recupèrer l'heure actuelle stockée dans la valeur t
+            tm->tm_mon + 1, /// grace a localtime on recupère la date/heure puis on retourne un pointeur vers tm(structure) qui contient les elements de la date
             tm->tm_mday,
             tm->tm_hour,
             tm->tm_min);
