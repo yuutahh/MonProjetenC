@@ -1,0 +1,4 @@
+#ifndef TABLEDEMULTIPLICATION_H_INCLUDED
+#define TABLEDEMULTIPLICATION_H_INCLUDED
+void afficher_table();
+#endif
