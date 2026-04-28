@@ -7,8 +7,8 @@ void multiplication() {
     printf("Multiplication\n");
     srand(time(NULL));
     
-    a = rand() % 10 + 1;
-    b = rand() % 10 + 1;   
+    a = rand() % 10 + 1; /// nombre aléatoire de 1 à 10
+    b = rand() % 10 + 1; /// nombre aléatoire de 1 à 10
 
     printf("%d x %d = ?\n", a, b);
 
