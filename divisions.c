@@ -7,8 +7,8 @@ void divisions() {
     printf("Divisions\n");
     srand(time(NULL));
     
-    a = rand() % 11;
-    b = rand() % 10 + 1;   
+    a = rand() % 11;      /// de 0 a 10 inclus
+    b = rand() % 10 + 1;  /// de 1 à 10
 
     printf("%d / %d = ?\n", a, b);
 
