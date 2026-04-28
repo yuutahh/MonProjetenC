@@ -17,7 +17,7 @@ int exercice_table(int choix2) {
         printf("%d x %d = ? ", choix2, i);
         scanf("%d", &rep);
 
-        if (rep != choix2 * i) {
+        if (rep != choix2 * i) {  /// si la reponse donné n'est pas = au choix2 etant la table fois i alors printf...etc...
             printf("Mauvaise reponse, la bonne etait %d.\n", choix2 * i);
             return 0; // perdu
         }
