@@ -26,10 +26,10 @@ int main()
     int Point = charger_score(nom);
 
     printf("Bienvenue %s, votre score actuel est : %d\n", nom, Point);
-    Point += points_gagnes;
+    Point += points_gagnes;       /// ici += permet de faire Point = Point + points_gagnes
     sauvegarder_score(nom, Point);
 
-    while (choix != 0) {
+    while (choix != 0) {  ///tant que le choix n'est pas egal a 0 faire: 
         printf("Vos Points : %d\n",Point);
         printf("+-------------------------------------------+\n");
         printf("|1 : Addition                               |\n");
@@ -51,7 +51,7 @@ int main()
             case 4 : 
             printf("Choisissez une table (1 a 10) : ");
             scanf("%d", &choix2);
-            if (choix2 < 1 || choix2 > 10) {
+            if (choix2 < 1 || choix2 > 10) {  /// si le choix de table est < 1 ou > 10 on renvoie que la table invalide
                 printf("Table invalide.\n");
             } else {
                 afficher_table(choix2);
